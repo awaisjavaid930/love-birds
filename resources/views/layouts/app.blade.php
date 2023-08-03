@@ -27,8 +27,8 @@
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 @else
-                    <a class="navbar-brand" href="{{ url('/home') }}">
-                        {{ auth()->user()->name }}
+                    <a class="navbar-brand fw-bold" href="{{ url('/home') }}">
+                        {{ auth()->user()->name }} Aviary
                     </a>
                 @endguest
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -38,11 +38,6 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
-
-                    </ul>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
